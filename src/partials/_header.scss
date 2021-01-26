@@ -1,7 +1,7 @@
 #navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
     width: 100%;
     .container{
         display: flex;
@@ -21,6 +21,10 @@
             .link{
                 font-size: $fs-small;
                 margin-left: 2rem;
+                color: $black;
+            }
+            .link-blue{
+                color: $blue;
             }
         }
     }

@@ -1,0 +1,16 @@
+#presentation{
+    padding: 40px 0;// margin-top: 100px;
+    .title{
+        padding-bottom: 40px;
+    }
+    .sign-up{
+        span{
+            margin: 0 5px;
+        }
+        .email{
+            margin-top: 30px;
+            font-size: $fs-small;
+        }
+    }
+
+}

@@ -342,46 +342,40 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #58402c;
 }
 
 .btn_white {
-  color: #2c4792;
   background-color: #fff;
   border: 1px solid #2c4792;
   padding: 10px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 5px;
   background-color: #fff;
   color: #2c4792;
 }
+.btn_white:hover {
+  background-color: #ffe7d2;
+}
 
 .btn_blue {
-  color: #2c4792;
   background-color: #fff;
   border: 1px solid #2c4792;
   padding: 10px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 5px;
   background-color: #2c4792;
   color: #fff;
 }
 
 .link {
+  display: inline-block;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
-  color: #58402c;
-}
-
-.link-blue {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: #2c4792;
 }
 
 ul li {
@@ -391,14 +385,37 @@ ul li .link {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+  color: #58402c;
+}
+
 header, nav, section, footer, .container {
   height: 100%;
 }
 
 #header {
-  min-height: 800px;
   background-color: #fff;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 #navbar {
@@ -412,17 +429,16 @@ header, nav, section, footer, .container {
 #section-top, #section-bottom {
   background-color: #ffe7d2;
   min-height: 600px;
+  padding: 40px 0;
 }
 
 #section-middle, #footer {
   background-color: #fff;
   min-height: 600px;
+  padding: 40px 0;
 }
 
 #navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
 }
 #navbar .container {
@@ -449,4 +465,22 @@ header, nav, section, footer, .container {
 #navbar .container .menu .link {
   font-size: 14px;
   margin-left: 2rem;
+  color: #58402c;
+}
+#navbar .container .menu .link-blue {
+  color: #2c4792;
+}
+
+#presentation {
+  padding: 40px 0;
+}
+#presentation .title {
+  padding-bottom: 40px;
+}
+#presentation .sign-up span {
+  margin: 0 5px;
+}
+#presentation .sign-up .email {
+  margin-top: 30px;
+  font-size: 14px;
 }
