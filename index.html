@@ -30,7 +30,23 @@
 <body>
     <div id="root">
         <header id="header">
-            <nav id="navbar"></nav>
+            <nav id="navbar">
+                <div class="container">
+                    <div class="logo">
+                        <img :src="imgpath_2+'/logo.svg'" alt="logo">
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#" class="link">solutions <i class="fas fa-chevron-down"></i></a></li>
+                        <li><a href="#" class="link">pricing</a></li>
+                        <li><a href="#" class="link">blog</a></li>
+                        <li><a href="#" class="link">sign in</a></li>
+                        <li><a href="#" class="link link-blue btn_white">sign up</a></li>
+
+
+                    </ul>
+
+                </div>
+            </nav>
             <section id="presentation"></section>
         </header>
         <main id="main">

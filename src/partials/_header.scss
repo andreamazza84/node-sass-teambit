@@ -1,0 +1,27 @@
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $black;
+        .logo{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .menu{
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .link{
+                font-size: $fs-small;
+                margin-left: 2rem;
+            }
+        }
+    }
+}
