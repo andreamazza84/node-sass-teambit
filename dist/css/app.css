@@ -413,6 +413,7 @@ h1 {
 h2 {
   font-size: 30px;
   font-weight: 500;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
@@ -509,4 +510,26 @@ header, nav, section, footer, .container {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+}
+
+#main .container {
+  border-bottom: 1px solid black;
+}
+#main .container .row {
+  padding: 40px 0;
+}
+#main .container .row [class*=col-] {
+  text-align: center;
+}
+#main .container .row [class*=col-] img {
+  display: block;
+  margin: auto;
+  height: 130px;
+}
+#main .container .row [class*=col-] .description {
+  margin-bottom: 30px;
+}
+#main .container .row [class*=col-] #before {
+  height: 300px;
+  margin: 40px auto;
 }

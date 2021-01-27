@@ -1,0 +1,23 @@
+#main{
+    .container{
+        border-bottom: 1px solid black;
+        .row{
+            padding: 40px 0;
+            [class*="col-"]{
+                text-align: center;
+                img{
+                    display: block;
+                    margin: auto;
+                    height: 130px;
+                }
+                .description{
+                    margin-bottom: 30px;
+                }
+                #before{
+                    height: 300px;
+                    margin: 40px auto; 
+                }
+            }
+        }
+    }
+}

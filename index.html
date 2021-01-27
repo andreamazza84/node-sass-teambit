@@ -31,14 +31,14 @@
             <nav id="navbar">
                 <div class="container">
                     <div class="logo">
-                        <img v-once :src="imgpath_2+img.sitelogo" alt="logo">
+                        <img v-once :src="imgpath + img.sitelogo" alt="logo">
                     </div>
                     <ul class="menu">
                         <li><a href="#" class="link">solutions <i class="fas fa-chevron-down"></i></a></li>
                         <li><a href="#" class="link">pricing</a></li>
                         <li><a href="#" class="link">blog</a></li>
                         <li><a href="#" class="link">sign in</a></li>
-                        <li><a href="#" class="link link-blue btn_white"><img :src="imgpath_2 + img.google" alt="G">sign up</a></li>
+                        <li><a href="#" class="link link-blue btn_white"><img :src="imgpath + img.google" alt="G">sign up</a></li>
                     </ul>
                 </div>
             </nav>
@@ -51,16 +51,16 @@
                                 <h3>Teambit helps teams create a high performing culture with regular feedback.</h3>
                             </div>
                             <div class="sign-up">
-                                <a href="#" class="link btn_blue"><img :src="imgpath_2 + img.google" alt="G">sign up with Google</a>
+                                <a href="#" class="link btn_blue"><img :src="imgpath + img.google" alt="G">sign up with Google</a>
                                 <span>or</span>
-                                <a href="#" class="link btn_blue"><img :src="imgpath_3 + img.slack" alt="G">sign up with Slack</a>
+                                <a href="#" class="link btn_blue"><img :src="imgpath + img.slack" alt="G">sign up with Slack</a>
                                 <div class="email">or use your email address
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-12">
-                            <div class="image" :style="'background-image: url('+imgpath_2+img.ill_1+')'"></div>
+                            <div class="image" :style="'background-image: url('+ imgpath + img.ill_1+')'"></div>
                         </div>
 
                     </div>
@@ -68,7 +68,30 @@
             </section>
         </header>
         <main id="main">
-            <section id="section-top"></section>
+            <section id="section-top">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="col-offset-lg-3 col-lg-6">Traditional people processes lead to disengagement and turnover.</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img :src="imgpath + img.hardcore" alt="hardcore">
+                            <div class="description">They are harcore, formal and disconnected.</div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img :src="imgpath + img.nofeed" alt="no feedback">
+                            <div class="description">They don't encourage regular feedback.</div>
+                        </div>
+                        <div class="col-lg-4">
+                            <img :src="imgpath + img.notsafe" alt="not safe">
+                            <div class="description">They don't make it safe to speak up.</div>
+                        </div>
+                        <div class="col-offset-lg-3 col-lg-6">
+                            <img id="before" :src="imgpath + img.before" alt="before">
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id="section-middle"></section>
             <section id="section-bottom"></section>
         </main>
