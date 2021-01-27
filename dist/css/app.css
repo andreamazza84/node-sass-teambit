@@ -587,6 +587,9 @@ header, nav, section, footer, .container {
   text-align: left;
   margin-bottom: 40px;
 }
+#main #section-bottom .container h1 img {
+  height: 40px;
+}
 #main #section-bottom .container .textarea {
   width: 90%;
   margin: auto;
