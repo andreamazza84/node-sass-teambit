@@ -418,7 +418,7 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 1rem;
@@ -443,7 +443,6 @@ header, nav, section, footer, .container {
 
 #main {
   min-height: 800px;
-  padding: 20px 0;
 }
 
 #section-top, #section-bottom {
@@ -512,27 +511,59 @@ header, nav, section, footer, .container {
   background-position: right;
 }
 
-#main .container {
+#main {
+  padding: 20px 0;
+}
+#main #section-top .container {
   padding: 30px 0;
 }
-#main .container:first-of-type {
+#main #section-top .container:first-of-type {
   border-bottom: 1px solid black;
 }
-#main .container .row {
+#main #section-top .container .row {
   padding: 40px 0;
 }
-#main .container .row [class*=col-] {
+#main #section-top .container .row [class*=col-] {
   text-align: center;
 }
-#main .container .row [class*=col-] img {
+#main #section-top .container .row [class*=col-] img {
   display: block;
   margin: auto;
   height: 130px;
 }
-#main .container .row [class*=col-] .description {
+#main #section-top .container .row [class*=col-] .description {
   margin-bottom: 30px;
 }
-#main .container .row [class*=col-] #before {
+#main #section-top .container .row [class*=col-] #before {
   height: 300px;
   margin: 40px auto;
+}
+#main #section-middle {
+  padding: 40px 0;
+}
+#main #section-middle .container .row {
+  padding-bottom: 30px;
+}
+#main #section-middle .container .row [class*=col-] img {
+  width: 100%;
+}
+#main #section-middle .container .row [class*=col-] .description h2 {
+  margin-bottom: 40px;
+  line-height: 2;
+}
+#main #section-middle .container .row [class*=col-] .description p {
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+#main #section-middle .container .row [class*=col-] .description a {
+  display: block;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 300;
+}
+#main #section-middle .container .row [class*=col-] .description img {
+  display: block;
+  margin-top: 30px;
 }

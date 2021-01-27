@@ -1,25 +1,65 @@
 #main{
-    .container{
-        padding: 30px 0; 
-        &:first-of-type{
-            border-bottom: 1px solid black};
-        .row{
-            padding: 40px 0;
-            [class*="col-"]{
-                text-align: center;
-                img{
-                    display: block;
-                    margin: auto;
-                    height: 130px;
-                }
-                .description{
-                    margin-bottom: 30px;
-                }
-                #before{
-                    height: 300px;
-                    margin: 40px auto; 
+    padding: 20px 0;
+    #section-top{
+        .container{
+            padding: 30px 0; 
+            &:first-of-type{
+                border-bottom: 1px solid black};
+            .row{
+                padding: 40px 0;
+                [class*="col-"]{
+                    text-align: center;
+                    img{
+                        display: block;
+                        margin: auto;
+                        height: 130px;
+                    }
+                    .description{
+                        margin-bottom: 30px;
+                    }
+                    #before{
+                        height: 300px;
+                        margin: 40px auto; 
+                    }
                 }
             }
         }
     }
+    #section-middle{
+        padding: 40px 0;
+        .container{
+            .row{
+                padding-bottom: 30px;
+                [class*="col-"]{ //-col
+                    img{
+                        width: 100%;
+                    }
+                    .description{
+                        h2{
+                            margin-bottom: 40px;
+                            line-height: 2;
+                        }
+                        p{
+                            font-size: $fs-medium;
+                            line-height: 1.5;
+                            margin-bottom: 40px;
+                            font-weight: 400;
+                        }
+                        a{
+                            display: block;
+                            text-decoration: none;
+                            font-size: $fs-medium;
+                            font-weight: 300;
+                        }
+                        img{
+                            display: block;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
 }

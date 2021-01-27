@@ -16,7 +16,14 @@ let app = new Vue({
             sifeed: 'feedbacksuggestions.png',
             safe: 'safe.png',
             after: 'after.png',
-
+            feedback: 'employee-feedback.jpg',
+            communication: 'communication.jpg',
+            survey: 'employee-survey.jpg',
+            insights: 'insights.jpg',
+            em_review: 'performance-review.jpg',
+            review: 'review.jpg',
+            em_survey: 'employee-survey.jpg',
+            recognition: 'recognition.jpg'
 
         },
     },
