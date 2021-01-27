@@ -39,8 +39,8 @@
                         <li><a href="#" class="link">sign in</a></li>
                         <li><a href="#" class="link link-blue btn_white"><img :src="imgpath + img.google" alt="G">sign up</a></li>
                     </ul>
-                    <div class="smallmenu" @click="menushow()">
-                        <i class="fas fa-bars"></i>
+                    <div class="smallmenu">
+                        <i class="fas fa-bars" @click="menushow()"></i>
                         <ul :class="(showmenu)?'active':'hide'">
                             <li><a href="#" class="link">solutions <i class="fas fa-chevron-down"></i></a></li>
                             <li><a href="#" class="link">pricing</a></li>

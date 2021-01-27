@@ -62,19 +62,24 @@
 }
 
 .active{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
+    display: block;
+    width: fit-content;
+    text-align: left;
+    background-color: $bg-pink;
+    padding: 20px;
+    border-radius: 10px;
     position: absolute;
     top: 30px;
     right: 30px;
+    li{
+        margin-bottom: 10px;
+    }
     .link{
         font-size: $fs-small;
-        margin-left: 1rem;
         color: $black;
     }
     .link-blue{
+        margin-top: 10px;
         color: $blue;
     }
 }
@@ -97,7 +102,6 @@
             }
         }
     }
-    
     
     #presentation{
         .rightside{
