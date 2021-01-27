@@ -7,6 +7,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: $black;
+    // min-width: 549px;
 }
 //buttons
 @mixin btn{
@@ -15,11 +16,10 @@ body{
     align-items: center;
     background-color: $bg-white;
     border: 1px solid $blue;
-    padding: 10px;
-    font-size: 16px;
+    padding: 10px 5px;
+    font-size: 14px;
     font-weight: 600;
     border-radius: 5px;
-    line-height: 16px;
     img{
         display: inline-block;
         height: 20px;
@@ -71,19 +71,19 @@ h1{
     font-size: $fs-big;
     font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 h2{
     font-size: $fs-large;
     font-weight: 600;
     line-height: 1.5;
-    margin-bottom: 1rem;
+    margin-bottom: 40px;
 }
 h3{
     font-size: $fs-medium;
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 h1, h2, h3{
     color: $black;
@@ -112,15 +112,26 @@ header, nav, section, footer, .container{
 #section-top, #section-bottom{
     background-color: $bg-pink;
     min-height: 600px;
-    padding: 40px 0;
 }
 #section-middle{
     background-color: $bg-white;
     min-height: 600px;
-    padding: 40px 0;
 }
 #footer{
     background-color: $bg-white;
     min-height: 600px;
 }
 
+//media query
+@media all and (max-width: 998px) {
+    body{
+        text-align: center;
+    }
+
+}
+@media all and (max-width: 550px){
+    .container{
+        max-width: 90%;
+        width: 90%;
+    }
+}

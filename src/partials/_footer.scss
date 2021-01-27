@@ -1,5 +1,6 @@
 #footer{
     padding: 60px 0;
+    text-align: left;
     .container{
         .row{
             [class*='col-']{
@@ -34,7 +35,7 @@
                 font-weight: 600;
                 line-height: 2;
                 text-transform: capitalize;
-                min-height: 300px;
+                min-height: 320px;
                 .title{
                     font-size: $fs-medium;
                     margin-bottom: 20px;
