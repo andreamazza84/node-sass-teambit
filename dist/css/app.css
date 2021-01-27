@@ -368,7 +368,7 @@ body {
   align-items: center;
   background-color: #fff;
   border: 1px solid #2c4792;
-  padding: 10px 5px;
+  padding: 5px;
   font-size: 14px;
   font-weight: 600;
   border-radius: 5px;
@@ -390,7 +390,7 @@ body {
   align-items: center;
   background-color: #fff;
   border: 1px solid #2c4792;
-  padding: 10px 5px;
+  padding: 5px;
   font-size: 14px;
   font-weight: 600;
   border-radius: 5px;
@@ -496,7 +496,9 @@ header, nav, section, footer, .container {
 #navbar .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #58402c;
+  position: relative;
 }
 #navbar .container .logo {
   width: -webkit-fit-content;
@@ -522,6 +524,9 @@ header, nav, section, footer, .container {
 #navbar .container .menu .link-blue {
   color: #2c4792;
 }
+#navbar .container .smallmenu {
+  display: none;
+}
 
 #presentation {
   padding: 40px 0;
@@ -544,7 +549,37 @@ header, nav, section, footer, .container {
   background-position: right;
 }
 
+.active {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.active .link {
+  font-size: 14px;
+  margin-left: 1rem;
+  color: #58402c;
+}
+.active .link-blue {
+  color: #2c4792;
+}
+
+.hide {
+  display: none;
+}
+
 @media all and (max-width: 998px) {
+  #navbar .container .largemenu {
+    display: none;
+  }
+  #navbar .container .smallmenu {
+    display: block;
+    cursor: pointer;
+  }
+
   #presentation .rightside .image {
     height: 450px;
     background-position: center;

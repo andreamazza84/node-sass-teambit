@@ -7,7 +7,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
     <!-- VueJs - development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- Google Font - Roboto -->
@@ -33,13 +32,23 @@
                     <div class="logo">
                         <img v-once :src="imgpath + img.sitelogo" alt="logo">
                     </div>
-                    <ul class="menu">
+                    <ul class="menu largemenu">
                         <li><a href="#" class="link">solutions <i class="fas fa-chevron-down"></i></a></li>
                         <li><a href="#" class="link">pricing</a></li>
                         <li><a href="#" class="link">blog</a></li>
                         <li><a href="#" class="link">sign in</a></li>
                         <li><a href="#" class="link link-blue btn_white"><img :src="imgpath + img.google" alt="G">sign up</a></li>
                     </ul>
+                    <div class="smallmenu" @click="menushow()">
+                        <i class="fas fa-bars"></i>
+                        <ul :class="(showmenu)?'active':'hide'">
+                            <li><a href="#" class="link">solutions <i class="fas fa-chevron-down"></i></a></li>
+                            <li><a href="#" class="link">pricing</a></li>
+                            <li><a href="#" class="link">blog</a></li>
+                            <li><a href="#" class="link">sign in</a></li>
+                            <li><a href="#" class="link link-blue btn_white"><img :src="imgpath + img.google" alt="G">sign up</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <section id="presentation">

@@ -48,13 +48,28 @@ var app = new Vue({
       connect: ['feedback', 'surveys', 'reviews', 'praise'],
       lobs: ['feedback', 'surveys', 'reviews', 'praise'],
       fromtheblog: ['how to change your company culture: a four-step framework', 'how teams can be more productive by killing 8-hour workday', 'how to build high performing teams inspired by nature', 'view all']
-    }
+    },
+    windowWidth: null,
+    showmenu: false
   },
   computed: {},
-  methods: {},
-  created: function created() {},
-  mounted: function mounted() {}
-}); //:src="imgpath+img.chat.svg"
+  methods: {
+    menushow: function menushow() {
+      if (this.showmenu === true) {
+        this.showmenu = false;
+      } else {
+        this.showmenu = true;
+      }
+    }
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    window.addEventListener('resize', function () {
+      return _this.windowWidth = window.innerWidth;
+    });
+  }
+});
 
 /***/ }),
 

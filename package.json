@@ -16,8 +16,11 @@
   "devDependencies": {
     "laravel-mix": "^6.0.10",
     "postcss": "^8.1.14",
-    "resolve-url-loader": "^3.1.0",
+    "resolve-url-loader": "^3.1.2",
     "sass": "^1.32.5",
     "sass-loader": "^8.0.2"
+  },
+  "dependencies": {
+    "vue-screen-size": "^1.0.1"
   }
 }

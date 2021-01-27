@@ -69,10 +69,25 @@ let app = new Vue({
                 'view all'
             ],
         },
+        windowWidth: null,
+        showmenu: false,
     },
+
     computed: {},
-    methods: {},
-    created(){},
-    mounted(){},
+    methods: {
+        menushow: function(){
+            if(this.showmenu === true){
+                this.showmenu = false;
+            }
+            else{
+                this.showmenu = true;
+            }
+        },
+    },
+    mounted() {
+        window.addEventListener('resize', () => {
+            return this.windowWidth = window.innerWidth;
+        });
+
+    },
 });
-//:src="imgpath+img.chat.svg"

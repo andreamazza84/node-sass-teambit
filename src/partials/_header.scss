@@ -6,7 +6,9 @@
     .container{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         border-bottom: 1px solid $black;
+        position: relative;
         .logo{
             width: fit-content;
             height: 100%;
@@ -26,6 +28,9 @@
             .link-blue{
                 color: $blue;
             }
+        }
+        .smallmenu{
+            display: none;
         }
     }
 }
@@ -56,8 +61,44 @@
     }
 }
 
+.active{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    .link{
+        font-size: $fs-small;
+        margin-left: 1rem;
+        color: $black;
+    }
+    .link-blue{
+        color: $blue;
+    }
+}
+.hide{
+    display: none;
+}
+
+
 //media query
 @media all and (max-width: 998px) {
+    
+    #navbar{
+        .container{
+            .largemenu{
+                display: none;
+            }
+            .smallmenu{
+                display: block;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    
     #presentation{
         .rightside{
             .image{
