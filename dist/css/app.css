@@ -411,8 +411,8 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 28px;
+  font-weight: 600;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
@@ -513,6 +513,9 @@ header, nav, section, footer, .container {
 }
 
 #main .container {
+  padding: 30px 0;
+}
+#main .container:first-of-type {
   border-bottom: 1px solid black;
 }
 #main .container .row {

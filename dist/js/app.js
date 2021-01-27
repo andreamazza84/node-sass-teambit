@@ -20,7 +20,11 @@ var app = new Vue({
       hardcore: 'hardcore.png',
       nofeed: 'nofeedback.png',
       notsafe: 'notsafe.png',
-      before: 'before.png'
+      before: 'before.png',
+      light: 'lightweight.png',
+      sifeed: 'feedbacksuggestions.png',
+      safe: 'safe.png',
+      after: 'after.png'
     }
   },
   computed: {},
