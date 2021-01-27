@@ -27,7 +27,7 @@
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -430,7 +430,7 @@ h2 {
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 1rem;
@@ -438,6 +438,10 @@ h3 {
 
 h1, h2, h3 {
   color: #58402c;
+}
+
+.flex {
+  display: flex;
 }
 
 header, nav, section, footer, .container {
@@ -463,10 +467,15 @@ header, nav, section, footer, .container {
   padding: 40px 0;
 }
 
-#section-middle, #footer {
+#section-middle {
   background-color: #fff;
   min-height: 600px;
   padding: 40px 0;
+}
+
+#footer {
+  background-color: #fff;
+  min-height: 600px;
 }
 
 #navbar {
@@ -564,7 +573,7 @@ header, nav, section, footer, .container {
   line-height: 2;
 }
 #main #section-middle .container .row [class*=col-] .description p {
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 40px;
   font-weight: 400;
@@ -572,7 +581,7 @@ header, nav, section, footer, .container {
 #main #section-middle .container .row [class*=col-] .description a {
   display: block;
   text-decoration: none;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 300;
 }
 #main #section-middle .container .row [class*=col-] .description img {
@@ -638,4 +647,45 @@ header, nav, section, footer, .container {
 #main #section-bottom .container .sign-up .email {
   margin-top: 30px;
   font-size: 14px;
+}
+
+#footer {
+  padding: 60px 0;
+}
+#footer .container .row [class*=col-] {
+  margin-bottom: 40px;
+}
+#footer .container .row .flex {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#footer .container .row .flex .logo {
+  display: inline-block;
+  width: 25%;
+  max-height: 120px;
+  margin-right: 5%;
+}
+#footer .container .row .flex p {
+  display: inline-block;
+  width: 70%;
+  color: #58402c;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+#footer .container .row .flex p strong {
+  color: #2c4792;
+  font-size: 16px;
+  font-weight: 600;
+}
+#footer .container .row .menu {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 2;
+  text-transform: capitalize;
+  min-height: 300px;
+}
+#footer .container .row .menu .title {
+  font-size: 20px;
+  margin-bottom: 20px;
 }

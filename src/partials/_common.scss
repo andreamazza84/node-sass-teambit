@@ -88,6 +88,12 @@ h3{
 h1, h2, h3{
     color: $black;
 }
+//utilities
+.flex{
+    display: flex;
+}
+
+
 //structure
 header, nav, section, footer, .container{
     height: 100%;
@@ -108,9 +114,13 @@ header, nav, section, footer, .container{
     min-height: 600px;
     padding: 40px 0;
 }
-#section-middle, #footer{
+#section-middle{
     background-color: $bg-white;
     min-height: 600px;
     padding: 40px 0;
+}
+#footer{
+    background-color: $bg-white;
+    min-height: 600px;
 }
 

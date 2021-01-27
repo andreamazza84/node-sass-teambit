@@ -203,14 +203,51 @@
                                     <i class="fas fa-arrow-right"></i>
                                 </div>
                             </div>
-                            
-
                         </div>    
                     </div>
                 </div>
             </section>
         </main>
-        <footer id="footer"></footer>
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="flex col-lg-2 col-md-12">
+                        <img class="logo" :src="imgpath + img.small_logo" alt="logo">
+                        <p><strong>Teambit </strong>helps teams create high performing cultures by making feedback a daily habit.</p>
+                    </div>
+                    <div class="col-lg-1 col-offset-lg-1 col-md-4 col-offset-md-0">
+                        <ul class="menu">
+                            <li class="title">product</li>
+                            <li v-for="list in menu.product">{{list}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-1 col-offset-lg-1 col-md-4 col-offset-md-0">
+                        <ul class="menu">
+                            <li class="title">about</li>
+                            <li v-for="list in menu.about">{{list}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-1 col-offset-lg-1 col-md-4 col-offset-md-0">
+                        <ul class="menu">
+                            <li class="title">connect</li>
+                            <li v-for="list in menu.connect">{{list}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-1 col-offset-lg-1 col-md-4 col-offset-md-0">
+                        <ul class="menu">
+                            <li class="title">lobs</li>
+                            <li v-for="list in menu.lobs">{{list}}</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-1 col-offset-lg-1 col-md-4 col-offset-md-4">
+                        <ul class="menu">
+                            <li class="title">from the blog</li>
+                            <li v-for="list in menu.fromtheblog">{{list}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="dist/js/app.js"></script>
 </body>

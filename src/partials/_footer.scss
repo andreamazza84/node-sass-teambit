@@ -1,0 +1,45 @@
+#footer{
+    padding: 60px 0;
+    .container{
+        .row{
+            [class*='col-']{
+                margin-bottom: 40px;
+            }
+            .flex{
+                justify-content: flex-start;
+                align-items: flex-start;
+                .logo{
+                    display: inline-block;
+                    width: 25%;
+                    max-height: 120px;
+                    margin-right: 5%
+                }
+                p{
+                    display: inline-block;
+                    width: 70%;
+                    color: $black;
+                    font-size: $fs-medium;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    strong{
+                        color: $blue;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+                }
+
+            }
+            .menu{
+                font-size: $fs-small;
+                font-weight: 600;
+                line-height: 2;
+                text-transform: capitalize;
+                min-height: 300px;
+                .title{
+                    font-size: $fs-medium;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
