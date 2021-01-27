@@ -61,5 +61,62 @@
         }
         
     }
+    #section-bottom{
+        padding: 40px 0;
+        .container{
+            h1{
+                margin: auto;
+                text-align: left;
+                margin-bottom: 40px;
+            }
+            .textarea{
+                width: 90%;
+                margin: auto;
+                margin-bottom: 40px;
+                height: max-content;
+                padding: 30px 20px;
+                border: 1px solid $blue;
+                border-radius: 10px;
+                font-family: Helvetica, sans-serif;
+                background-color: $bg-white;
+                position: relative;
+                .fa-quote-left{
+                    position: absolute;
+                    top: -16px;
+                    left: 0px;
+                    color: $blue;
+                    font-size: 35px; 
+                }
+                .founders{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-top: 30px;
+                    img{
+                        height: 60px;
+                        margin-right: 20px;
+                    }
+                    .signature{
+                        font-size: $fs-small;
+                        strong{
+                            color: $blue;
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .sign-up{
+                text-align: center;
+                span{
+                    margin: 0 5px;
+                }
+                .email{
+                    margin-top: 30px;
+                    font-size: $fs-small;
+                }
+            }
+        }
+    }
 
 }

@@ -178,10 +178,40 @@
 
                 </div>
             </section>
-            <section id="section-bottom"></section>
+            <section id="section-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-offset-lg-3 col-lg-6 col-offset-md-0 col-md-12">
+
+                            <h1>See Teambit for yourself.
+                                <br>Get started in seconds
+                            </h1>
+                            <div class="textarea">{{chat.value}}
+                                <i class="fas fa-quote-left"></i>
+                                <div class="founders">
+                                    <img :src="imgpath + img.face_1" alt="">
+                                    <img :src="imgpath + img.face_2" alt="">
+                                    <div class="signature"><strong>Alex and Bohden</strong><br>Co-Founders at Teambit</div>
+                                </div>
+                            </div>
+                            <div class="sign-up">
+                                <a href="#" class="link btn_blue"><img :src="imgpath + img.google" alt="G">sign up with Google</a>
+                                <span>or</span>
+                                <a href="#" class="link btn_blue"><img :src="imgpath + img.slack" alt="G">sign up with Slack</a>
+                                <div class="email">or use your email address
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                            
+
+                        </div>    
+                    </div>
+                </div>
+            </section>
         </main>
         <footer id="footer"></footer>
     </div>
     <script src="dist/js/app.js"></script>
 </body>
 </html>
+
